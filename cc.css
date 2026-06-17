@@ -1,0 +1,289 @@
+body {
+  margin: 0px;
+}
+section {
+  background: radial-gradient(circle at center, #1a1a1a 0%, #090909 70%);
+}
+/* menu area */
+.img-fitter {
+  height: 100px;
+  width: 170px;
+}
+.img-fitter img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  /* filter: invert(0) brightness(1); */
+}
+.nav-links {
+  display: none;
+  gap: 185px;
+  margin: auto;
+}
+.nav-links a {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+.custom-nav.active .nav-links {
+  display: flex;
+}
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-nav.active .container-fluid {
+  display: flex;
+  align-items: center;
+}
+.menu-btn {
+  background: transparent;
+  border: 1px solid rgba(250, 248, 248, 0.733);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+.menu-btn i {
+  font-size: 28px;
+  background: linear-gradient(90deg, #7b85f3, #ee9f63, #f9a217);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* mobile menu area */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(9, 9, 9, 0.96);
+
+  backdrop-filter: blur(15px);
+
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.4s ease;
+}
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-content {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 40px;
+}
+.close-btn {
+  position: absolute;
+
+  top: 30px;
+  right: 30px;
+
+  background: none;
+  border: none;
+
+  color: white;
+
+  font-size: 30px;
+}
+/* mobile menu area ends */
+/* menu area ends */
+
+/* header starts */
+.hero {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.hero div h1 {
+  font-size: 62px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero div h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero div h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+/* header ends */
+
+/* venture cards starts */
+.cards {
+  margin: 0 250px 20px;
+}
+.glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: 0;
+  transition: all 0.4s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.color1 {
+  background: #4a57ed;
+}
+.color2 {
+  background: #c97433;
+}
+.color3 {
+  background: #f9a217;
+}
+.bg1 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(images/IMG_E9482[1].JPG);
+}
+.bg2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/bakriium.jpg);
+}
+.bg3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/ats.jpg);
+}
+.glasscard {
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.461);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 28px;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+.glasscard h4 {
+  padding: 210px 10px 40px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  z-index: 3;
+  transition: 0.4s ease;
+}
+.glasscard .stretch {
+  padding: 280px 10px 40px;
+}
+.glasscard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.034),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+.col-md-4 {
+  position: relative;
+}
+.glasscard::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s ease;
+  width: 80%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(25px);
+  border-radius: 50%;
+}
+.glasscard:hover::after {
+  filter: blur(35px);
+  opacity: 0.8;
+}
+.hero-floor {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 300px;
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.12),
+    transparent 70%
+  );
+  filter: blur(50px);
+}
+.glasscard:hover {
+  transform: translateY(-12px) scale(1.02);
+}
+.glasscard:hover h4 {
+  transform: translateY(-150px);
+}
+.glasscard:hover .overlay {
+  opacity: 1;
+}
+.col-md-4:hover .glow {
+  opacity: 0.65;
+  transform: scale(1.15);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 2;
+}
+.card-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  transform: translateY(30px);
+  opacity: 0;
+  z-index: 3;
+  color: white;
+  transition: 0.4s ease;
+  font-size: 17px;
+  font-family: "Inter", serif;
+  font-weight: 200;
+}
+.glasscard:hover .card-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.explore {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f8efd5;
+}
+/* venture card ends */
