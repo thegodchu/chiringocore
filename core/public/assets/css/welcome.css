@@ -158,17 +158,17 @@ section {
 .bg1 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url(images/IMG_E9482[1].JPG);
+    url("../images/landing_page/IMG_E9482[1].JPG");
 }
 .bg2 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url(images/bakriium.jpg);
+    url("../images/landing_page/bakriium.jpg");
 }
 .bg3 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url(images/ats.jpg);
+    url("../images/landing_page/ats.jpg");
 }
 .glasscard {
   background-size: cover;
