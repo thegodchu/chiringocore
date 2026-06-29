@@ -82,7 +82,7 @@
               <h4 class="stretch">Indigo Hub</h4>
               <div class="card-content">
                 <p>Websites • Branding <br />• Digital Experiences</p>
-                <a href="#" class="explore" type="button"> Explore → </a>
+                <a href="{{ route('home') }}" class="explore" type="button"> Explore → </a>
               </div>
             </div>
           </div>
