@@ -1,0 +1,211 @@
+:root {
+    --text-primary: #fff;
+    --text-slighty-blurred-white: rgba(255, 255, 255, 0.93);
+    --text-muted: rgba(255, 255, 255, 0.8);
+    --text-faint: rgba(255, 255, 255, 0.6);
+
+    --border: rgba(255, 255, 255, 0.15);
+    --border-accent: rgba(138, 92, 246, 0.45);
+
+    --primary: #8a5cf6;
+    --accent-pink: #ff4fdb;
+    --accent-purple: #7861ff;
+    --accent-blue: #5b7cff;
+    --background: #09090b;
+
+    --main-text: "Cormorant Garamond", serif;
+    --body-text: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--background) !important;
+    margin: 0;
+}
+/* nav bar (desktop) starts */
+.img-fitter {
+    height: 90px;
+    width: 280px;
+}
+.img-fitter img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.nav-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-link {
+    display: inline-block;
+    padding-bottom: 18px;
+    color: var(--text-faint) !important;
+    text-decoration: none;
+}
+.nav-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary);
+    bottom: 0;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn.nav-btn {
+    color: var(--text-muted);
+    border: 1px solid var(--border-accent);
+    padding: 10px 30px;
+}
+.btn.nav-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--text-faint);
+}
+/* nav bar (desktop) ends */
+
+/* hero section starts */
+/* hero text */
+.hero {
+    margin: 0 50px;
+}
+.false-button {
+    display: inline;
+    border: 1px solid var(--text-faint);
+    padding: 5px 12px;
+    border-radius: 30px;
+    color: var(--text-faint);
+    font-size: 8px;
+}
+.dot {
+    color: var(--primary);
+    margin-right: 10px;
+}
+.hero-text h1 {
+    font-size: 45px;
+    color: var(--text-primary);
+    font-family: var(--main-text);
+    margin-top: 25px;
+    max-width: 408px;
+    line-height: 1.1;
+}
+.hero-text h1 span {
+    background-image: linear-gradient(
+        90deg,
+        var(--primary) 0%,
+        var(--accent-pink) 35%,
+        var(--accent-purple) 70%,
+        var(--accent-blue) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.hero-text p {
+    color: var(--text-faint);
+    font-size: 10px;
+    max-width: 400px;
+}
+.btn.hero-btn-grad {
+    background: linear-gradient(90deg, var(--accent-pink), var(--accent-purple));
+    color: var(--text-primary);
+    border: transparent;
+    padding: 10px 25px;
+    font-size: 14px;
+}
+.btn.hero-btn-grad:hover {
+    transition: 0.35s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px var(--border-accent);
+}
+.btn.hero-btn-norm {
+    color: var(--text-primary);
+    border: 1px solid var(--border-accent);
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.btn.hero-btn-norm:hover {
+    border-color: var(--text-faint);
+    transition: 0.35s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px var(--text-faint);
+}
+
+/* hero img */
+.hero-photo {
+    width: 100%;
+    max-width: 760px;
+    aspect-ratio: 20/10;
+    overflow: hidden;
+    border-radius: 35px;
+    position: relative;
+}
+.hero-photo::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(
+        circle at center,
+        rgba(138, 92, 246, 0.801),
+        transparent 80%
+    );
+    filter: blur(70px);
+    z-index: -1;
+}
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top 0px right 90px;
+}
+
+/* socials */
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 50px;
+}
+.socials a {
+    font-size: 15px;
+    color: var(--text-slighty-blurred-white);
+    text-decoration: none;
+    opacity: 80%;
+    transform: 0.3s;
+    transition: 0.3s;
+}
+.socials a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+.border-dash {
+    width: 1px;
+    height: 40px;
+    align-self: left;
+    background: var(--text-faint);
+    margin-left: 10px;
+}
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.scroll-indicator span {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    color: var(--text-faint);
+}
+.fa-arrow-down-long {
+    color: var(--text-slighty-blurred-white);
+}
