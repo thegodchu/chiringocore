@@ -62,8 +62,9 @@
 
         </div>
     </nav>
-    {{ $slot }}
-
+    <div class="main">
+        {{ $slot }}
+    </div>
 </body>
 
 </html>

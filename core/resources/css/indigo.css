@@ -13,6 +13,12 @@
     --accent-blue: #5b7cff;
     --background: #09090b;
 
+    --linear-purple-to-pink: linear-gradient(
+        90deg,
+        var(--accent-purple),
+        var(--accent-pink)
+    );
+
     --main-text: "Cormorant Garamond", serif;
     --body-text: "Inter", sans-serif;
 }
@@ -69,10 +75,13 @@ body {
 }
 /* nav bar (desktop) ends */
 
+.main {
+    margin: 0 50px;
+}
 /* hero section starts */
 /* hero text */
 .hero {
-    margin: 0 50px;
+    position: relative;
 }
 .false-button {
     display: inline;
@@ -92,7 +101,7 @@ body {
     font-family: var(--main-text);
     margin-top: 25px;
     max-width: 408px;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 .hero-text h1 span {
     background-image: linear-gradient(
@@ -114,7 +123,11 @@ body {
     max-width: 400px;
 }
 .btn.hero-btn-grad {
-    background: linear-gradient(90deg, var(--accent-pink), var(--accent-purple));
+    background: linear-gradient(
+        90deg,
+        var(--accent-pink),
+        var(--accent-purple)
+    );
     color: var(--text-primary);
     border: transparent;
     padding: 10px 25px;
@@ -142,19 +155,18 @@ body {
 /* hero img */
 .hero-photo {
     width: 100%;
-    max-width: 760px;
-    aspect-ratio: 20/10;
+    max-width: 790px;
+    aspect-ratio: 19/17;
     overflow: hidden;
-    border-radius: 35px;
     position: relative;
 }
 .hero-photo::before {
     content: "";
     position: absolute;
-    top: 40%;
-    left: 20%;
-    width: 300px;
-    height: 400px;
+    top: 20%;
+    left: 35%;
+    width: 250px;
+    height: 300px;
     background: radial-gradient(
         circle at center,
         rgba(138, 92, 246, 0.801),
@@ -167,7 +179,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top 0px right 90px;
+    object-position: left -150px top -50px;
 }
 
 /* socials */
@@ -175,7 +187,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 .socials a {
     font-size: 15px;
@@ -208,4 +221,96 @@ body {
 }
 .fa-arrow-down-long {
     color: var(--text-slighty-blurred-white);
+    font-size: 12px;
+    margin-left: 4px;
 }
+
+/* Stats Card */
+.stats-card {
+    background-color: #151524c6;
+    /* color: var(--text-primary) !important; */
+    opacity: 90%;
+    max-width: 1150px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    /* bottom: 100px; */
+    transform: translateY(-100px);
+}
+.holder {
+    display: flex;
+    align-items: center;
+}
+.emoji {
+    border: 1px solid var(--text-muted);
+    padding: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.stat {
+    display: inline-grid;
+    margin-left: 10px;
+}
+.digit span {
+    background-image: linear-gradient(
+        90deg,
+        var(--accent-purple) 40%,
+        var(--accent-pink) 90%,
+        var(--text-faint) 0%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.digit {
+    color: var(--primary);
+    font-family: var(--main-text);
+    font-size: 37px;
+}
+.stat-tag {
+    color: var(--text-primary);
+    font-family: var(--body-text);
+    font-weight: 300;
+    font-size: 15px;
+}
+.stat-text {
+    color: var(--text-faint);
+    font-family: var(--body-text);
+    font-weight: 200;
+    font-size: 8px;
+}
+
+/* portfolio */
+.portfolio {
+    margin-top: -60px;
+}
+.label {
+    background-image: var(--linear-purple-to-pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--main-text);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.title {
+    color: var(--text-primary);
+    font-family: var(--main-text);
+    font-size: 35px;
+}
+.director{
+   color: var(--text-faint);
+    font-size: 10px;
+}
+.pointer{
+    border: 1px solid var(--text-faint);
+    color: #ffffff74;
+    padding: 3px;
+    border-radius: 50%;
+}
+

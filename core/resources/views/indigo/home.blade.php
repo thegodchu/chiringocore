@@ -44,4 +44,73 @@
             </div>
         </div>
     </section>
+
+    <section class="stats-card">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="holder">
+                    <div class="emoji"></div>
+                    <div class="stat">
+                        <h2 class="digit"><span>14</span>+</h2>
+                        <h4 class="stat-tag">Projects Completed</h4>
+                        <p class="stat-text">Across various industries</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="holder">
+                    <div class="emoji"></div>
+                    <div class="stat">
+                        <h2 class="digit"><span>8</span>+</h2>
+                        <h4 class="stat-tag">Happy Clients</h4>
+                        <p class="stat-text">Long-term partnerships</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3">
+                <div class="holder">
+                    <div class="emoji"></div>
+                    <div class="stat">
+                        <h2 class="digit"><span>2</span>+</h2>
+                        <h4 class="stat-tag">Years of Experience</h4>
+                        <p class="stat-text">In the industry</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="holder">
+                    <div class="emoji"></div>
+                    <div class="stat">
+                        <h2 class="digit"><span>98</span>%</h2>
+                        <h4 class="stat-tag">Client Satisfaction</h4>
+                        <p class="stat-text">We love what we do</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="label">Portfolio</div>
+                <h1 class="title">Selected Work</h1>
+            </div>
+
+            <div class="col-lg-2">
+                <span class="director">View All Projects</span>
+                <a href="#" class="pointer"><i class="fa-solid fa-arrow-right-long "></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+        </div>
+    </section>
 </x-indigo-layout>
