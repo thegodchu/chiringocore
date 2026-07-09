@@ -1,4 +1,5 @@
 <x-indigo-layout>
+    <!--hero-->
     <section class="hero">
         <div class="row m-0">
             <div class="col-lg-5">
@@ -45,11 +46,14 @@
         </div>
     </section>
 
+    <!--stats-->
     <section class="stats-card">
         <div class="row">
             <div class="col-lg-3">
                 <div class="holder">
-                    <div class="emoji"></div>
+                    <div class="emoji">
+                        <img src="{{ asset('/assets/images/stats/construction.png') }}" alt="">
+                    </div>
                     <div class="stat">
                         <h2 class="digit"><span>14</span>+</h2>
                         <h4 class="stat-tag">Projects Completed</h4>
@@ -60,7 +64,9 @@
             </div>
             <div class="col-lg-3">
                 <div class="holder">
-                    <div class="emoji"></div>
+                    <div class="emoji">
+                        <img src="{{ asset('/assets/images/stats/construction.png') }}" alt="">
+                    </div>
                     <div class="stat">
                         <h2 class="digit"><span>8</span>+</h2>
                         <h4 class="stat-tag">Happy Clients</h4>
@@ -72,7 +78,9 @@
             </div>
             <div class="col-lg-3">
                 <div class="holder">
-                    <div class="emoji"></div>
+                    <div class="emoji">
+                        <img src="{{ asset('/assets/images/stats/construction.png') }}" alt="">
+                    </div>
                     <div class="stat">
                         <h2 class="digit"><span>2</span>+</h2>
                         <h4 class="stat-tag">Years of Experience</h4>
@@ -83,7 +91,9 @@
             </div>
             <div class="col-lg-3">
                 <div class="holder">
-                    <div class="emoji"></div>
+                    <div class="emoji">
+                        <img src="{{ asset('/assets/images/stats/construction.png') }}" alt="">
+                    </div>
                     <div class="stat">
                         <h2 class="digit"><span>98</span>%</h2>
                         <h4 class="stat-tag">Client Satisfaction</h4>
@@ -95,6 +105,7 @@
         </div>
     </section>
 
+    <!--portfolio-->
     <section class="portfolio">
         <div class="row">
             <div class="col-lg-10">
@@ -107,10 +118,136 @@
                 <a href="#" class="pointer"><i class="fa-solid fa-arrow-right-long "></i></a>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
+            <div class="col-lg-3">
+                <div class="portfolio-bg"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    <h4 class="work-tag">01</h4>
+                    <h3 class="brand">Bakeriium</h3>
+                    <p class="category">Brand & Web Design</p>
+                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="portfolio-bg"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    <h4 class="work-tag">02</h4>
+                    <h3 class="brand">Bakeriium</h3>
+                    <p class="category">Brand & Web Design</p>
+                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="portfolio-bg"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    <h4 class="work-tag">03</h4>
+                    <h3 class="brand">Bakeriium</h3>
+                    <p class="category">Brand & Web Design</p>
+                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="portfolio-bg"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    <h4 class="work-tag">04</h4>
+                    <h3 class="brand">Bakeriium</h3>
+                    <p class="category">Brand & Web Design</p>
+                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--services-->
+    <section>
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="label">Services</div>
+                <h1 class="title">What I Can Help You With</h1>
+            </div>
+
+            <div class="col-lg-2">
+                <span class="director">Explore All Services</span>
+                <a href="#" class="pointer"><i class="fa-solid fa-arrow-right-long "></i></a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="service-card">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="service-icon" style="display: inline"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h3 class="service-title">Website Design</h3>
+                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
+                                and engages your audience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-card">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="service-icon" style="display: inline"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h3 class="service-title">Website Design</h3>
+                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
+                                and engages your audience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-card">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="service-icon" style="display: inline"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h3 class="service-title">Website Design</h3>
+                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
+                                and engages your audience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-card">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="service-icon" style="display: inline"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h3 class="service-title">Website Design</h3>
+                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
+                                and engages your audience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-card">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="service-icon" style="display: inline"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h3 class="service-title">Website Design</h3>
+                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
+                                and engages your audience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </x-indigo-layout>
