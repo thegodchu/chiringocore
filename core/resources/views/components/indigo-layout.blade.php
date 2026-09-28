@@ -65,6 +65,85 @@
     <div class="main">
         {{ $slot }}
     </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <div class="img-holder">
+                            <img src="{{ asset('assets/images/indigo/logoind.png') }}" alt="logo" class="img-fluid">
+                        </div>
+                    </a>
+
+                    <p>Designing thoughtful digital experiences for businesses and creators.</p>
+
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <p>2026 Indigo Hub.</p>
+                    <p>Build with curiousity.</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="container">
+                            <h5>Quick Links</h5>
+                            <a href="#">Home</a>
+                            <a href="#">Portfolio</a>
+                            <a href="#">Services</a>
+                            <a href="#">Education</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container">
+                            <h5>Services</h5>
+                            <a href="#">Website Development</a>
+                            <a href="#">Website Design</a>
+                            <a href="#">Website Revamp</a>
+                            <a href="#">UI/UX Design</a>
+                            <a href="#">Visual Identity</a>
+                            <a href="#">Consulting</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container">
+                            <h5>Contact</h5>
+                            <a href="#"><i class="fa-solid fa-envelope me-3"></i>indigohub@gmail.com</a>
+                            <a href="#"><i class="fa-solid fa-phone me-3"></i>+234 807-209-9077</a>
+                            <a href="#"><i class="fa-solid fa-link me-3"></i>LinkTree</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container">
+                            <h5>Newsletter</h5>
+                            <p>Get insights and updates right in your inbox.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
