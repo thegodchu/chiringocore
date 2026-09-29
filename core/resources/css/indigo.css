@@ -319,7 +319,7 @@ body {
 }
 .pointer {
     color: var(--text-faint);
-    font-size: 10px;  
+    font-size: 10px;
 }
 .pointer:hover {
     width: 30px;
@@ -496,10 +496,13 @@ body {
 }
 
 /* testimonials */
-
-.author .image {
-    width: 50px;
+.author-image img {
+    width: 200px;
+    height: 72px ;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
 
 /* about me */
 .img-box {

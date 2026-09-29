@@ -26,7 +26,7 @@
             <div class="col-md-2">
                 <a class="navbar-brand" href="#">
                     <div class="img-fitter">
-                        <img src="{{ asset('assets/images/indigo/logoind.png') }}" alt="logo" class="logo">
+                        <img src="{{ asset('assets/images/indigo/static/logoind.png') }}" alt="logo" class="logo">
                     </div>
                 </a>
             </div>
@@ -73,7 +73,7 @@
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <div class="img-holder">
-                            <img src="{{ asset('assets/images/indigo/logoind.png') }}" alt="logo" class="img-fluid">
+                            <img src="{{ asset('assets/images/indigo/static/logoind.png') }}" alt="logo" class="img-fluid">
                         </div>
                     </a>
 

@@ -22,7 +22,7 @@
             <!-- hero image-->
             <div class="col-lg-6">
                 <div class="hero-photo">
-                    <img src="{{ asset('assets/images/indigo/hero.png') }}" alt="hero photo">
+                    <img src="{{ asset('assets/images/indigo/static/hero.png') }}" alt="hero photo">
                 </div>
             </div>
 
@@ -522,21 +522,21 @@
                 <div class="reason-card">
                     <div class="star"></div>
 
-                    <h5 class="comment"> Wprking with Indigo Hub felt like having a creative partner who truly
+                    <h5 class="comment"> Working with Indigo Hub felt like having a creative partner who truly
                         cared about my vision.</h5>
                     <span class="quote"></span>
                     <div class="line"></div>
 
-                    <div class="row author">
-                        <div class="col-lg-2">
-                            <div class="image">
-                                <img src="{{ asset('/assets/images/indigo/me.jpg') }}" alt=""
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="author-image">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/bodytea.jpg') }}" alt=""
                                     class="img-fluid">
                             </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-9">
                             <div class="author-details">
-                                <h5 class="author-name">Amaka E.</h5>
+                                <h5 class="author-name">Amara E.</h5>
                                 <p class="business">Founder, Syaeom Studios</p>
                             </div>
                         </div>
@@ -553,11 +553,21 @@
                     <span class="quote"></span>
                     <div class="line"></div>
 
-                    <div class="author">
-                        <span class="image"></span>
-                        <h5 class="author-name">Jedidiah O.</h5>
-                        <p class="business">Product Manager, Paydove</p>
+                    <div class="row author">
+                        <div class="col-lg-3">
+                            <div class="author-image">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/studiothis.jpg') }}" alt=""
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="author-details">
+                                <h5 class="author-name">Jedidiah O.</h5>
+                                <p class="business">Product Manager, Paydove</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -570,14 +580,21 @@
                     <span class="quote"></span>
                     <div class="line"></div>
 
-                    <div class="author">
-                        <span class="image"></span>
-                        <h5 class="author-name">Tariq W.</h5>
-                        <p class="business">CEO, Zoda</p>
+                    <div class="row author">
+                        <div class="col-lg-3">
+                            <div class="author-image">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/me.jpg') }}" alt=""
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="author-details">
+                                <h5 class="author-name">Tariq W.</h5>
+                                <p class="business">CEO, Zoda</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
     <!--about me-->
@@ -587,7 +604,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="img-box">
-                    <img src="{{ asset('/assets/images/indigo/faceshot.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('/assets/images/indigo/static/faceshot.png') }}" alt="" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-4">
@@ -649,7 +666,7 @@
     </section>
 
     <section class="contact"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ asset('assets/images/indigo/cta.png') }}');">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ asset('assets/images/indigo/static/cta.png') }}');">
         >
         <div class="row m-0">
             <div class="col-lg-4">
