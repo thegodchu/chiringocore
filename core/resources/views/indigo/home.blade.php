@@ -254,10 +254,10 @@
     <!--why choose us-->
     <section class="mb-50">
         <div class="label">Why Indigo Hub</div>
-        <h1 class="title">Why <span class="highlight">Indigo</span> Hub</h1>
 
         <div class="row">
             <div class="col-lg-3">
+                <h1 class="title">Why <span class="highlight">Indigo</span> Hub</h1>
                 <div class="reason-text">
                     <p>We blend creativity, strategy and technology to build digital experiences that are beautiful,
                         functional
@@ -266,10 +266,12 @@
             </div>
 
             <div class="col-lg-9">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-lg-3">
                         <div class="reason-card">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-idea-01"></i>
+                            </div>
 
                             <h5>Thoughtful Strategy</h5>
                             <p>We start by understanding your business, goals and audience to create the right
@@ -278,7 +280,9 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="reason-card">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-pen-tool-03"></i>
+                            </div>
 
                             <h5 class="heading">Beautiful Interfaces</h5>
                             <p>Designs that communicate your brand and create meaningful user experiences.</p>
@@ -287,7 +291,9 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="reason-card">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-web-programming"></i>
+                            </div>
 
                             <h5 class="heading">Reliable Development</h5>
                             <p>Clean, efficient and scalable codes that brings your vision to life seamlessly.
@@ -297,7 +303,9 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="reason-card">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-ai-co-editing"></i>
+                            </div>
 
                             <h5 class="heading">Long-term Partnership</h5>
                             <p>We grow with you, providing support and solutions that adapt as you evolve.</p>
@@ -328,60 +336,92 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">01</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-ai-search-02"></i>
+                    </div>
 
                     <h5>Discover</h5>
                     <p>We learn about your business, audience and goals in depth.</p>
                 </div>
+
+                <div class="process-arrow">
+                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-02"></i>
+                </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">02</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-document-validation"></i>
+                    </div>
 
                     <h5>Plan</h5>
                     <p>We define the strategy, structure and roadmap for your project.</p>
                 </div>
+
+                <div class="process-arrow">
+                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-02"></i>
+                </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">03</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-edit-01"></i>
+                    </div>
 
                     <h5>Design</h5>
                     <p>Crafting beautiful, intuitive designs that reflect your brand.</p>
                 </div>
+
+                <div class="process-arrow">
+                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-02"></i>
+                </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">04</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-code-xml"></i>
+                    </div>
 
                     <h5>Develop</h5>
                     <p>Bringing designs to life with clean, efficient and scalable codes.</p>
                 </div>
+
+                <div class="process-arrow">
+                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-02"></i>
+                </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">05</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-start-up-02"></i>
+                    </div>
 
                     <h5>Launch</h5>
                     <p>We test, refine, and deploy your product for the world.</p>
                 </div>
+
+                <div class="process-arrow">
+                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-02"></i>
+                </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 process-col">
                 <div class="reason-card">
                     <div class="work-tag">06</div>
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-customer-support"></i>
+                    </div>
 
                     <h5>Support</h5>
                     <p>We provide ongoing support and updates to help you grow.</p>
@@ -487,14 +527,19 @@
                     <span class="quote"></span>
                     <div class="line"></div>
 
-                    <div class="author">
-                        <span class="image">
-                            <img src="{{ asset('/assets/images/indigo/me.jpg') }}" alt=""
-                                class="img-fluid">
-
-                        </span>
-                        <h5 class="author-name">Amaka E.</h5>
-                        <p class="business">Founder, Syaeom Studios</p>
+                    <div class="row author">
+                        <div class="col-lg-2">
+                            <div class="image">
+                                <img src="{{ asset('/assets/images/indigo/me.jpg') }}" alt=""
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="author-details">
+                                <h5 class="author-name">Amaka E.</h5>
+                                <p class="business">Founder, Syaeom Studios</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -602,7 +647,6 @@
         </div>
         </div>
     </section>
-    {{-- <i data-lucide="star-check"></i>   --}}
 
     <section class="contact"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ asset('assets/images/indigo/cta.png') }}');">
