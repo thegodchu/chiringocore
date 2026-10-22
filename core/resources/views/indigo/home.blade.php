@@ -1,6 +1,6 @@
 <x-indigo-layout>
     <!--hero-->
-    <section class="hero">
+    <section class="hero" id=""home>
         <div class="row m-0">
             <div class="col-lg-5">
                 <div class="false-button">
@@ -47,7 +47,7 @@
     </section>
 
     <!--stats-->
-    <section class="stats-card">
+    <section class="stats-card" >
         <div class="row">
             <div class="col-lg-3">
                 <div class="holder">
@@ -92,7 +92,7 @@
             <div class="col-lg-3">
                 <div class="holder">
                     <div class="emoji">
-                        <img src="{{ asset('/assets/images/indigo/stats/review.png') }}" alt="">
+                        <img src="{{ asset('/assets/images/indigo/stats/star.png') }}" alt="">
                     </div>
                     <div class="stat">
                         <h2 class="digit"><span>98</span>%</h2>
@@ -106,7 +106,7 @@
     </section>
 
     <!--portfolio-->
-    <section class="portfolio mb-50">
+    <section class="portfolio mb-50" id="portfolio">
         <div class="row">
             <div class="col-lg-10">
                 <div class="label">Portfolio</div>
@@ -122,48 +122,56 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="portfolio-bg"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
                     <h4 class="work-tag">01</h4>
-                    <h3 class="brand">Bakeriium</h3>
-                    <p class="category">Brand & Web Design</p>
-                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    <div class="portfolio-info">
+                        <h3 class="brand">Bakeriium & The Botany</h3>
+                        <p class="category">Brand & Web Design</p>
+                        <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-3">
                 <div class="portfolio-bg"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ asset('assets/images/indigo/portfolio/chiringocore.png') }}');">
                     <h4 class="work-tag">02</h4>
-                    <h3 class="brand">Bakeriium</h3>
-                    <p class="category">Brand & Web Design</p>
-                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    <div class="portfolio-info">
+                        <h3 class="brand">ChiringoCore</h3>
+                        <p class="category">Brand & Web Design</p>
+                        <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-3">
                 <div class="portfolio-bg"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ asset('assets/images/indigo/portfolio/whitehat.png') }}');">
                     <h4 class="work-tag">03</h4>
-                    <h3 class="brand">Bakeriium</h3>
-                    <p class="category">Brand & Web Design</p>
-                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    <div class="portfolio-info">
+                        <h3 class="brand">Whitehat Academy</h3>
+                        <p class="category">Brand & Web Design</p>
+                        <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-3">
                 <div class="portfolio-bg"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('assets/images/indigo/portfolio/portfolio.png') }}');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ asset('assets/images/indigo/portfolio/ui.png') }}');"
                     <h4 class="work-tag">04</h4>
-                    <h3 class="brand">Bakeriium</h3>
-                    <p class="category">Brand & Web Design</p>
-                    <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    <div class="portfolio-info">
+                        <h3 class="brand">Dashboard UI</h3>
+                        <p class="category">UI/UX Design</p>
+                        <a href="#" type="button" class="btn case-btn">View Case Study</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!--services-->
-    <section class="mb-50">
+    <section class="mb-50" id="services">
         <div class="row">
             <div class="col-lg-10">
                 <div class="label">Services</div>
@@ -177,12 +185,14 @@
         </div>
 
 
-        <div class="row">
+        <div class="row services">
             <div class="col">
-                <div class="service-card">
+                <div class="reason-card">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="service-icon" style="display: inline"></div>
+                            <div class="service-icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-web-design-02"></i>
+                            </div>
                         </div>
                         <div class="col-lg-10">
                             <h3 class="service-title">Website Design</h3>
@@ -193,57 +203,65 @@
                 </div>
             </div>
             <div class="col">
-                <div class="service-card">
+                <div class="reason-card">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="service-icon" style="display: inline"></div>
+                            <div class="service-icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-computer-programming-01"></i>
+                            </div>
                         </div>
                         <div class="col-lg-10">
-                            <h3 class="service-title">Website Design</h3>
-                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
-                                and engages your audience</p>
+                            <h3 class="service-title">Website Development</h3>
+                            <p class="service-text">Clean, fast and functional websites built with the latest
+                                technologies and best practices.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="service-card">
+                <div class="reason-card">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="service-icon" style="display: inline"></div>
+                            <div class="service-icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-figma"></i>
+                            </div>
                         </div>
                         <div class="col-lg-10">
-                            <h3 class="service-title">Website Design</h3>
-                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
-                                and engages your audience</p>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-text">User-centered designs that are easy to use, accessible and designed
+                                to convert.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="service-card">
+                <div class="reason-card">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="service-icon" style="display: inline"></div>
+                            <div class="service-icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-palette"></i>
+                            </div>
                         </div>
                         <div class="col-lg-10">
-                            <h3 class="service-title">Website Design</h3>
-                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
-                                and engages your audience</p>
+                            <h3 class="service-title">Visual Identity</h3>
+                            <p class="service-text">Logos, colors, typography and visual systems that gives your brand
+                                a strong presence.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="service-card">
+                <div class="reason-card">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="service-icon" style="display: inline"></div>
+                            <div class="service-icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-comment-03"></i>
+                            </div>
                         </div>
                         <div class="col-lg-10">
-                            <h3 class="service-title">Website Design</h3>
-                            <p class="service-text">Modern, responsive and beautiful designs that reflects your brand
-                                and engages your audience</p>
+                            <h3 class="service-title">Consulting</h3>
+                            <p class="service-text">Get expert advice, website reviews and guidance to make better
+                                digital decisions.</p>
                         </div>
                     </div>
                 </div>
@@ -433,7 +451,7 @@
     </section>
 
     <!--education-->
-    <section class="mb-50">
+    <section class="mb-50" id="education">
         <div class="label">Insights</div>
         <h1 class="title">Learn With <span class="highlight">Indigo</span> Hub</h1>
 
@@ -446,11 +464,17 @@
             </div>
 
             <div class="col-lg-9">
-                <div class="row">
+                <div class="row insight">
                     <div class="col-lg-3">
                         <div class="reason-card">
                             <div class="holder-bg">
+                                <img src="{{ asset('assets/images/indigo/static/thumb3.jpg') }}"
+                                    alt="Building ChiringoCore">
+
                                 <span class="tag">Video</span>
+                                <a href="#" type="button" class="play-btn">
+                                    <i class="hgi hgi-stroke hgi-rounded hgi-play"></i>
+                                </a>
                             </div>
                             <div class="description">
                                 <h5>Building ChiringoCore</h5>
@@ -463,7 +487,13 @@
                     <div class="col-lg-3">
                         <div class="reason-card">
                             <div class="holder-bg">
+                                <img src="{{ asset('assets/images/indigo/static/thumbnail2.jpg') }}"
+                                    alt="Building ChiringoCore">
+
                                 <span class="tag">Video</span>
+                                <a href="#" type="button" class="play-btn">
+                                    <i class="hgi hgi-stroke hgi-rounded hgi-play"></i>
+                                </a>
                             </div>
                             <div class="description">
                                 <h5>Responsive Layouts</h5>
@@ -476,7 +506,13 @@
                     <div class="col-lg-3">
                         <div class="reason-card">
                             <div class="holder-bg">
+                                <img src="{{ asset('assets/images/indigo/static/thumbnail1.jpg') }}"
+                                    alt="Building ChiringoCore">
+
                                 <span class="tag">Article</span>
+                                <a href="#" type="button" class="play-btn">
+                                    <i class="hgi hgi-stroke hgi-rounded hgi-book-open-02"></i>
+                                </a>
                             </div>
                             <div class="description">
                                 <h5>Designing for Impact</h5>
@@ -489,7 +525,13 @@
                     <div class="col-lg-3">
                         <div class="reason-card">
                             <div class="holder-bg">
+                                <img src="{{ asset('assets/images/indigo/static/thumb4.jpg') }}"
+                                    alt="Building ChiringoCore">
+
                                 <span class="tag">Video</span>
+                                <a href="#" type="button" class="play-btn">
+                                    <i class="hgi hgi-stroke hgi-rounded hgi-play"></i>
+                                </a>
                             </div>
                             <div class="description">
                                 <h5>Design Decision</h5>
@@ -517,21 +559,35 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row testimonials">
             <div class="col-lg-4">
                 <div class="reason-card">
-                    <div class="star"></div>
-
-                    <h5 class="comment"> Working with Indigo Hub felt like having a creative partner who truly
-                        cared about my vision.</h5>
-                    <span class="quote"></span>
-                    <div class="line"></div>
-
+                    <div class="star">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                    </div>
                     <div class="row">
+                        <div class="col-md-10">
+                            <h5 class="comment"> Working with Indigo Hub felt like having a creative partner who truly
+                                cared about my vision.</h5>
+                        </div>
+
+                        <div class="col-md-2">
+                            <span class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-quote"></i>
+                            </span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="row author">
                         <div class="col-lg-3">
                             <div class="author-image">
-                                <img src="{{ asset('/assets/images/indigo/testimonial_author/bodytea.jpg') }}" alt=""
-                                    class="img-fluid">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/bodytea.jpg') }}"
+                                    alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-lg-9">
@@ -546,18 +602,33 @@
 
             <div class="col-lg-4">
                 <div class="reason-card">
-                    <div class="star"></div>
+                    <div class="star">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h5 class="comment">They understood exactly what I needed and delivered beyond my
+                                expectations.
+                            </h5>
+                        </div>
 
-                    <h5 class="comment">They understood exactly what I needed and delivered beyond my expectations.
-                    </h5>
-                    <span class="quote"></span>
-                    <div class="line"></div>
+                        <div class="col-md-2">
+                            <span class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-quote"></i>
+                            </span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
 
                     <div class="row author">
                         <div class="col-lg-3">
                             <div class="author-image">
-                                <img src="{{ asset('/assets/images/indigo/testimonial_author/studiothis.jpg') }}" alt=""
-                                    class="img-fluid">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/studiothis.jpg') }}"
+                                    alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-lg-9">
@@ -573,18 +644,34 @@
 
             <div class="col-lg-4">
                 <div class="reason-card">
-                    <div class="star"></div>
+                    <div class="star">
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                        <i class="hgi hgi-stroke hgi-rounded hgi-star"></i>
+                    </div>
 
-                    <h5 class="comment">Excellent delivery. The attention to detail and level of communication is
-                        next level. </h5>
-                    <span class="quote"></span>
-                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h5 class="comment">Excellent delivery. The attention to detail and level of communication
+                                is
+                                next level. </h5>
+                        </div>
+
+                        <div class="col-md-2">
+                            <span class="icon">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-quote"></i>
+                            </span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
 
                     <div class="row author">
                         <div class="col-lg-3">
                             <div class="author-image">
-                                <img src="{{ asset('/assets/images/indigo/testimonial_author/me.jpg') }}" alt=""
-                                    class="img-fluid">
+                                <img src="{{ asset('/assets/images/indigo/testimonial_author/me.jpg') }}"
+                                    alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-lg-9">
@@ -598,13 +685,14 @@
     </section>
 
     <!--about me-->
-    <section class="mb-50">
+    <section class="mb-50" id="about">
         <div class="label">About Me</div>
 
         <div class="row">
             <div class="col-lg-4">
                 <div class="img-box">
-                    <img src="{{ asset('/assets/images/indigo/static/faceshot.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('/assets/images/indigo/static/faceshot.png') }}" alt=""
+                        class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-4">
@@ -639,7 +727,7 @@
                     <div class="col-lg-12">
                         <div class="holder">
 
-                            <img src="{{ asset('/assets/images/indigo/stats/construction.png') }}" alt="">
+                            <img src="{{ asset('/assets/images/indigo/stats/growth.png') }}" alt="">
 
                             <div class="stat">
                                 <h2 class="digit"><span>2</span>+</h2>
@@ -651,7 +739,7 @@
                     <div class="col-lg-12">
                         <div class="holder">
 
-                            <img src="{{ asset('/assets/images/indigo/stats/construction.png') }}" alt="">
+                            <img src="{{ asset('/assets/images/indigo/stats/review.png') }}" alt="">
 
                             <div class="stat">
                                 <h2 class="digit"><span>10</span>+</h2>
@@ -665,9 +753,8 @@
         </div>
     </section>
 
-    <section class="contact"
+    <section class="contact mb-50" id="contact"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ asset('assets/images/indigo/static/cta.png') }}');">
-        >
         <div class="row m-0">
             <div class="col-lg-4">
                 <h2 class="title">Ready to build something <span class="highlight">meaningful</span></h2>

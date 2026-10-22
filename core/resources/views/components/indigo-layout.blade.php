@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
 </head>
 
 <body>
@@ -36,17 +36,17 @@
 
                 <div class="nav-wrapper">
                     <ul class="nav">
-                        <li><a class="nav-link active" href="#">Home</a></li>
+                        <li><a class="nav-link active" href="#home">Home</a></li>
 
-                        <li><a class="nav-link" href="#">Portfolio</a></li>
+                        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
 
-                        <li><a class="nav-link" href="#">Services</a></li>
+                        <li><a class="nav-link" href="#services">Services</a></li>
 
-                        <li><a class="nav-link" href="#">Education</a></li>
+                        <li><a class="nav-link" href="#education">Education</a></li>
 
-                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
 
-                        <li><a class="nav-link" href="#">Contact</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
 
                     <span class="nav-dot"></span>
@@ -73,7 +73,8 @@
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <div class="img-holder">
-                            <img src="{{ asset('assets/images/indigo/static/logoind.png') }}" alt="logo" class="img-fluid">
+                            <img src="{{ asset('assets/images/indigo/static/logoind.png') }}" alt="logo"
+                                class="img-fluid">
                         </div>
                     </a>
 
